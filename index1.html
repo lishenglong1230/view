@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>登录</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+</head>
+<script src="js/vue.js"></script>
+
+<body class="text-center">
+
+
+<form class="form-signin" action="#" method="post">
+    <div id="head" class="btn btn-lg btn-primary btn-block">
+        <span>{{message}}</span>
+    </div>
+    <label class="sr-only">Username</label>
+    <input type="text" name="username" class="form-control" placeholder="用户名">
+    <label class="sr-only">Password</label>
+    <input type="password" name="password" class="form-control" placeholder="密码">
+    <div id="login_register">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">{{login}}</button>
+        <a href="#" class="btn btn-lg btn-primary btn-block">{{register}}</a>
+    </div>
+
+</form>
+
+<script>
+
+    var vm1=new Vue({
+        el:"#login_register",
+        data:{
+            login:"login",
+            register:"regist"
+        }
+    })
+
+    var vm2=new Vue({
+        el:"#head",
+        data:{
+            message:"软件1901李胜龙vue实训系统"
+        }
+    });
+</script>
+</body>
+
+</html>
